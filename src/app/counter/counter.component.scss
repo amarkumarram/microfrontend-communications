@@ -1,7 +1,31 @@
-.counter {
-    padding: 10px 20px;
-    border: 1px solid black;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
+.counterContainer {
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    border: 4px dashed red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .counterLabel {
+        font-size: 28px;
+        display: flex;
+        margin-bottom: 30px;
+        font-weight: bold;
+        .counterValue {
+            margin: 0px;
+        }
+    }
+    .counterBtn {
+        padding: 10px 20px;
+        border: 1px solid darkblue;
+        color: darkblue;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: darkblue;
+            color: #fff;
+        }
+    }
 }

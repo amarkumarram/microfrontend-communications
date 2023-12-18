@@ -1,3 +1,7 @@
-<button class="counter" (click)="handleCounter()">Counter</button>
-
-{{counter}}
+<div class="counterContainer">
+    <h1>This is Remote Application.</h1>
+    <label class="counterLabel">Counter Value:&nbsp;<p class="counterValue">{{counter}}</p></label>
+    <div class="counterAction">
+        <button class="counterBtn" (click)="handleCounter()">Counter</button>
+    </div>
+</div>
