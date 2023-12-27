@@ -9,6 +9,12 @@ export class CounterComponent {
 
   public counter = 0;
 
+  constructor() {
+    window.addEventListener("controlMfeCounter", () => {
+      this.handleCounter();
+    });
+  }
+
   handleCounter() {
     this.counter += 1;
   }
