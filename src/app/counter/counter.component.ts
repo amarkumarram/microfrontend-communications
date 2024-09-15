@@ -18,4 +18,9 @@ export class CounterComponent {
   handleCounter() {
     this.counter += 1;
   }
+
+  handleHostText (e: any) {
+    const customEvent = new CustomEvent("controlHostText", {detail: e?.target?.value});
+    window.dispatchEvent(customEvent);
+  }
 }
